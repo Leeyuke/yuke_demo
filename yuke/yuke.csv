@@ -1,0 +1,3 @@
+index,reboot,start,service,useradd,message
+linux,,,,"useradd\[(\d)+\][\w\W]+name=(?<name>[\w\W]+),\sUID","<[\d]+>(?<time>[\w]+\s[\d]+\s[\d:]+)\s(?<event>[\w\W]+)\\\"",\\\""@version"
+windows,,,(?<service>[\u4E00-\u9FA5\w\s-()]+)服务处于\s(?<status>[\W]+)\s状态,,"\""message\\"":\\""(?<event>[\w\W]+)\\"",\\""Category"
